@@ -1,0 +1,46 @@
+Ensemble over contexts C0, C1, C2, C3 for group: FacebookAI-roberta-base_10epochs_seed67_freeze0
+ - C0: run_reports_advanced\FacebookAI-roberta-base_C0_10epochs_seed67_freeze0
+ - C1: run_reports_advanced\FacebookAI-roberta-base_C1_10epochs_seed67_freeze0
+ - C2: run_reports_advanced\FacebookAI-roberta-base_C2_10epochs_seed67_freeze0
+ - C3: run_reports_advanced\FacebookAI-roberta-base_C3_10epochs_seed67_freeze0
+
+=== Ensemble (mean logits) on test set ===
+Macro F1 = 0.6747
+Accuracy = 0.7065
+Classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.7157    0.6099    0.6585       487
+Cognitive dysfunction     0.4599    0.4468    0.4532       141
+            Emptiness     0.7432    0.6134    0.6721       269
+         Hopelessness     0.6818    0.7152    0.6981       653
+           Loneliness     0.7657    0.7739    0.7698       566
+           No emotion     0.7177    0.8125    0.7622      1499
+              Sadness     0.6799    0.6467    0.6629       900
+       Suicide intent     0.7901    0.7263    0.7569       285
+        Worthlessness     0.6740    0.6061    0.6382       457
+
+             accuracy                         0.7065      5257
+            macro avg     0.6920    0.6612    0.6747      5257
+         weighted avg     0.7063    0.7065    0.7045      5257
+
+
+=== Ensemble (majority vote over context predictions) on test set ===
+Macro F1 = 0.6721
+Accuracy = 0.7038
+Classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.7184    0.6078    0.6585       487
+Cognitive dysfunction     0.4701    0.4468    0.4582       141
+            Emptiness     0.7364    0.6022    0.6626       269
+         Hopelessness     0.6773    0.7136    0.6950       653
+           Loneliness     0.7676    0.7703    0.7690       566
+           No emotion     0.7128    0.8145    0.7603      1499
+              Sadness     0.6761    0.6356    0.6552       900
+       Suicide intent     0.7803    0.7228    0.7505       285
+        Worthlessness     0.6748    0.6083    0.6398       457
+
+             accuracy                         0.7038      5257
+            macro avg     0.6904    0.6580    0.6721      5257
+         weighted avg     0.7036    0.7038    0.7016      5257

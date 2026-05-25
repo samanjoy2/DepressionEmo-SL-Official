@@ -1,0 +1,232 @@
+Using device: cuda
+Loading data from: Annotation_majority_gold
+Model: microsoft/deberta-v3-base | Context mode: C0 | Epochs: 10
+Hyperparameters: max_length=512, train_batch_size=64, eval_batch_size=64, learning_rate=2e-05, weight_decay=0.01, warmup_ratio=0.1, gradient_accumulation_steps=1, seed=67, freeze_encoder_layers=0
+Loading model and tokenizer: microsoft/deberta-v3-base
+Not freezing any encoder layers (freeze_encoder_layers=0).
+
+Epoch 01 | Train loss = 1.7971 | Train accuracy = 0.3694 | Train macro F1 = 0.2373
+Epoch 01 | Val loss = 1.2422 | Val accuracy = 0.6088 | Val macro F1 = 0.5276
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6202    0.4577    0.5267       496
+Cognitive dysfunction     0.5584    0.2486    0.3440       173
+            Emptiness     0.4865    0.2109    0.2943       256
+         Hopelessness     0.4808    0.6568    0.5552       609
+           Loneliness     0.5914    0.7889    0.6761       578
+           No emotion     0.6525    0.8146    0.7246      1602
+              Sadness     0.6537    0.4671    0.5448       865
+       Suicide intent     0.6199    0.5249    0.5685       261
+        Worthlessness     0.6679    0.4187    0.5147       418
+
+             accuracy                         0.6088      5258
+            macro avg     0.5924    0.5098    0.5276      5258
+         weighted avg     0.6115    0.6088    0.5935      5258
+New best model at epoch 01 (Val loss = 1.2422)
+
+Epoch 02 | Train loss = 1.0719 | Train accuracy = 0.6535 | Train macro F1 = 0.6073
+Epoch 02 | Val loss = 1.0337 | Val accuracy = 0.6607 | Val macro F1 = 0.6161
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6180    0.5806    0.5988       496
+Cognitive dysfunction     0.5347    0.3121    0.3942       173
+            Emptiness     0.4618    0.6367    0.5353       256
+         Hopelessness     0.6172    0.6831    0.6485       609
+           Loneliness     0.6750    0.7907    0.7283       578
+           No emotion     0.7540    0.7291    0.7414      1602
+              Sadness     0.6748    0.5445    0.6027       865
+       Suicide intent     0.6904    0.6322    0.6600       261
+        Worthlessness     0.5828    0.6986    0.6355       418
+
+             accuracy                         0.6607      5258
+            macro avg     0.6232    0.6231    0.6161      5258
+         weighted avg     0.6654    0.6607    0.6590      5258
+New best model at epoch 02 (Val loss = 1.0337)
+
+Epoch 03 | Train loss = 0.7932 | Train accuracy = 0.7448 | Train macro F1 = 0.7193
+Epoch 03 | Val loss = 1.0126 | Val accuracy = 0.6799 | Val macro F1 = 0.6491
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.5592    0.6573    0.6043       496
+Cognitive dysfunction     0.5055    0.5318    0.5183       173
+            Emptiness     0.6750    0.5273    0.5921       256
+         Hopelessness     0.6871    0.6273    0.6558       609
+           Loneliness     0.7509    0.7301    0.7404       578
+           No emotion     0.7288    0.7734    0.7505      1602
+              Sadness     0.6632    0.5919    0.6255       865
+       Suicide intent     0.6716    0.6973    0.6842       261
+        Worthlessness     0.6597    0.6818    0.6706       418
+
+             accuracy                         0.6799      5258
+            macro avg     0.6557    0.6465    0.6491      5258
+         weighted avg     0.6813    0.6799    0.6791      5258
+New best model at epoch 03 (Val loss = 1.0126)
+
+Epoch 04 | Train loss = 0.6157 | Train accuracy = 0.8030 | Train macro F1 = 0.7829
+Epoch 04 | Val loss = 1.0509 | Val accuracy = 0.6803 | Val macro F1 = 0.6531
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.5860    0.6734    0.6266       496
+Cognitive dysfunction     0.4778    0.5607    0.5160       173
+            Emptiness     0.6746    0.5508    0.6065       256
+         Hopelessness     0.6470    0.6831    0.6645       609
+           Loneliness     0.7594    0.7370    0.7480       578
+           No emotion     0.7708    0.7160    0.7424      1602
+              Sadness     0.6554    0.6289    0.6419       865
+       Suicide intent     0.6840    0.7050    0.6943       261
+        Worthlessness     0.5938    0.6890    0.6379       418
+
+             accuracy                         0.6803      5258
+            macro avg     0.6499    0.6604    0.6531      5258
+         weighted avg     0.6861    0.6803    0.6818      5258
+New best model at epoch 04 (Val loss = 1.0509)
+
+Epoch 05 | Train loss = 0.4725 | Train accuracy = 0.8530 | Train macro F1 = 0.8395
+Epoch 05 | Val loss = 1.1007 | Val accuracy = 0.6906 | Val macro F1 = 0.6560
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6265    0.6190    0.6227       496
+Cognitive dysfunction     0.5811    0.4971    0.5358       173
+            Emptiness     0.6740    0.5977    0.6335       256
+         Hopelessness     0.7042    0.6568    0.6797       609
+           Loneliness     0.7374    0.7093    0.7231       578
+           No emotion     0.7082    0.8377    0.7675      1602
+              Sadness     0.6889    0.5734    0.6259       865
+       Suicide intent     0.7327    0.6092    0.6653       261
+        Worthlessness     0.6362    0.6651    0.6503       418
+
+             accuracy                         0.6906      5258
+            macro avg     0.6766    0.6406    0.6560      5258
+         weighted avg     0.6897    0.6906    0.6870      5258
+New best model at epoch 05 (Val loss = 1.1007)
+
+Epoch 06 | Train loss = 0.3613 | Train accuracy = 0.8903 | Train macro F1 = 0.8792
+Epoch 06 | Val loss = 1.1573 | Val accuracy = 0.6889 | Val macro F1 = 0.6565
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6762    0.5726    0.6201       496
+Cognitive dysfunction     0.5482    0.5260    0.5369       173
+            Emptiness     0.6765    0.5391    0.6000       256
+         Hopelessness     0.6879    0.6732    0.6805       609
+           Loneliness     0.7183    0.7457    0.7317       578
+           No emotion     0.7289    0.7971    0.7615      1602
+              Sadness     0.6197    0.6405    0.6299       865
+       Suicide intent     0.7063    0.6820    0.6940       261
+        Worthlessness     0.6925    0.6196    0.6540       418
+
+             accuracy                         0.6889      5258
+            macro avg     0.6727    0.6440    0.6565      5258
+         weighted avg     0.6875    0.6889    0.6867      5258
+New best model at epoch 06 (Val loss = 1.1573)
+
+Epoch 07 | Train loss = 0.2814 | Train accuracy = 0.9144 | Train macro F1 = 0.9072
+Epoch 07 | Val loss = 1.2712 | Val accuracy = 0.6860 | Val macro F1 = 0.6527
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6620    0.5726    0.6141       496
+Cognitive dysfunction     0.6142    0.4509    0.5200       173
+            Emptiness     0.6275    0.6055    0.6163       256
+         Hopelessness     0.6618    0.6683    0.6650       609
+           Loneliness     0.7251    0.7301    0.7276       578
+           No emotion     0.7412    0.7797    0.7600      1602
+              Sadness     0.6128    0.6751    0.6425       865
+       Suicide intent     0.7729    0.6130    0.6838       261
+        Worthlessness     0.6489    0.6411    0.6450       418
+
+             accuracy                         0.6860      5258
+            macro avg     0.6741    0.6374    0.6527      5258
+         weighted avg     0.6862    0.6860    0.6845      5258
+
+Epoch 08 | Train loss = 0.2248 | Train accuracy = 0.9319 | Train macro F1 = 0.9249
+Epoch 08 | Val loss = 1.3378 | Val accuracy = 0.6866 | Val macro F1 = 0.6540
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6725    0.5464    0.6029       496
+Cognitive dysfunction     0.5503    0.5376    0.5439       173
+            Emptiness     0.6728    0.5703    0.6173       256
+         Hopelessness     0.6719    0.6962    0.6839       609
+           Loneliness     0.7014    0.7561    0.7277       578
+           No emotion     0.7172    0.8027    0.7576      1602
+              Sadness     0.6492    0.6162    0.6323       865
+       Suicide intent     0.7547    0.6130    0.6765       261
+        Worthlessness     0.6684    0.6220    0.6444       418
+
+             accuracy                         0.6866      5258
+            macro avg     0.6732    0.6401    0.6540      5258
+         weighted avg     0.6852    0.6866    0.6837      5258
+
+Epoch 09 | Train loss = 0.1809 | Train accuracy = 0.9467 | Train macro F1 = 0.9411
+Epoch 09 | Val loss = 1.3877 | Val accuracy = 0.6845 | Val macro F1 = 0.6521
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6857    0.5323    0.5993       496
+Cognitive dysfunction     0.5894    0.5145    0.5494       173
+            Emptiness     0.6593    0.5820    0.6183       256
+         Hopelessness     0.6750    0.6617    0.6683       609
+           Loneliness     0.6960    0.7526    0.7232       578
+           No emotion     0.7191    0.8021    0.7583      1602
+              Sadness     0.6348    0.6289    0.6318       865
+       Suicide intent     0.7385    0.6169    0.6722       261
+        Worthlessness     0.6529    0.6435    0.6482       418
+
+             accuracy                         0.6845      5258
+            macro avg     0.6723    0.6372    0.6521      5258
+         weighted avg     0.6830    0.6845    0.6815      5258
+
+Epoch 10 | Train loss = 0.1583 | Train accuracy = 0.9537 | Train macro F1 = 0.9491
+Epoch 10 | Val loss = 1.4155 | Val accuracy = 0.6862 | Val macro F1 = 0.6554
+Validation classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6602    0.5524    0.6015       496
+Cognitive dysfunction     0.6000    0.5202    0.5573       173
+            Emptiness     0.6622    0.5742    0.6151       256
+         Hopelessness     0.6785    0.6617    0.6700       609
+           Loneliness     0.6934    0.7630    0.7265       578
+           No emotion     0.7251    0.7921    0.7572      1602
+              Sadness     0.6442    0.6301    0.6371       865
+       Suicide intent     0.7241    0.6437    0.6815       261
+        Worthlessness     0.6562    0.6483    0.6522       418
+
+             accuracy                         0.6862      5258
+            macro avg     0.6715    0.6429    0.6554      5258
+         weighted avg     0.6841    0.6862    0.6837      5258
+
+Loading best model from epoch 06 (Val macro F1 = 0.6565, Val loss = 1.1573) for final test evaluation.
+
+=== Final evaluation on test set ===
+Test loss = 1.2703
+Test macro F1 = 0.6284
+Test accuracy = 0.6614
+Test classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6571    0.5626    0.6062       487
+Cognitive dysfunction     0.4155    0.4184    0.4170       141
+            Emptiness     0.6837    0.5465    0.6074       269
+         Hopelessness     0.6580    0.6187    0.6377       653
+           Loneliness     0.7235    0.7350    0.7292       566
+           No emotion     0.6802    0.7732    0.7237      1499
+              Sadness     0.5894    0.6300    0.6090       900
+       Suicide intent     0.6711    0.7158    0.6927       285
+        Worthlessness     0.7623    0.5405    0.6325       457
+
+             accuracy                         0.6614      5257
+            macro avg     0.6490    0.6156    0.6284      5257
+         weighted avg     0.6641    0.6614    0.6593      5257
+Saved best model, tokenizer, and labels to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0
+Saved per-epoch metrics to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0/metrics_per_epoch.csv
+Saved loss curves plot to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0/loss_curves.png
+Saved macro F1 plot to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0/val_macro_f1.png
+Saved combined loss/accuracy plot to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0/loss_and_score_curves.png
+Saved test logits to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0/test_logits.csv
+Saved test confusion matrix plot to: run_reports_advanced/microsoft-deberta-v3-base_C0_10epochs_seed67_freeze0/confusion_matrix_test.png

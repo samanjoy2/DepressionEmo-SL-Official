@@ -1,0 +1,46 @@
+Ensemble over contexts C0, C1, C2, C3 for group: google-bert-bert-base-uncased_10epochs_seed67_freeze0
+ - C0: run_reports_advanced\google-bert-bert-base-uncased_C0_10epochs_seed67_freeze0
+ - C1: run_reports_advanced\google-bert-bert-base-uncased_C1_10epochs_seed67_freeze0
+ - C2: run_reports_advanced\google-bert-bert-base-uncased_C2_10epochs_seed67_freeze0
+ - C3: run_reports_advanced\google-bert-bert-base-uncased_C3_10epochs_seed67_freeze0
+
+=== Ensemble (mean logits) on test set ===
+Macro F1 = 0.6350
+Accuracy = 0.6663
+Classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6471    0.5647    0.6031       487
+Cognitive dysfunction     0.4444    0.4255    0.4348       141
+            Emptiness     0.6599    0.6059    0.6318       269
+         Hopelessness     0.6436    0.6692    0.6562       653
+           Loneliness     0.7359    0.7385    0.7372       566
+           No emotion     0.6942    0.7738    0.7319      1499
+              Sadness     0.6142    0.5944    0.6042       900
+       Suicide intent     0.7256    0.6772    0.7005       285
+        Worthlessness     0.6633    0.5733    0.6150       457
+
+             accuracy                         0.6663      5257
+            macro avg     0.6476    0.6247    0.6350      5257
+         weighted avg     0.6649    0.6663    0.6643      5257
+
+
+=== Ensemble (majority vote over context predictions) on test set ===
+Macro F1 = 0.6337
+Accuracy = 0.6650
+Classification report:
+                       precision    recall  f1-score   support
+
+                Anger     0.6501    0.5647    0.6044       487
+Cognitive dysfunction     0.4420    0.4326    0.4373       141
+            Emptiness     0.6680    0.6059    0.6355       269
+         Hopelessness     0.6384    0.6677    0.6527       653
+           Loneliness     0.7333    0.7385    0.7359       566
+           No emotion     0.6904    0.7765    0.7309      1499
+              Sadness     0.6161    0.5867    0.6010       900
+       Suicide intent     0.7203    0.6596    0.6886       285
+        Worthlessness     0.6658    0.5755    0.6174       457
+
+             accuracy                         0.6650      5257
+            macro avg     0.6472    0.6231    0.6337      5257
+         weighted avg     0.6638    0.6650    0.6629      5257
